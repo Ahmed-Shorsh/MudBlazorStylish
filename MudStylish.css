@@ -2,19 +2,34 @@
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;640&display=swap');
     
     /*brand text*/
-    .mudblazor-appbar-brand-text {
+     .mudblazor-appbar-brand-text {
         margin-left: 12px;
         font-size: 1.5rem;
         user-select: none;
-        font-family: 'Raleway', sans-serif;
+        font-family:'Raleway', sans-serif;
         font-weight: 500 !important;
     }
-    
-    
-    
-    
-    
-    
+    /*SUPPORT*/
+     .mud-button-label {
+        width: 100%;
+        display: inherit;
+        align-items: inherit;
+        justify-content: inherit;
+        padding-left: 0.3rem;
+        transform: translateY(1px);
+        font-size: 1.1em;
+    }
+    /*ICON*/
+     .mud-icon-button-edge-start {
+        margin-left: -12px;
+        margin-inline-start: -12px;
+        margin-inline-end: unset;
+    }
+    /*BRAND*/
+     .mudblazor-brand {
+        margin: 1.2rem 0 0;
+        padding: 0;
+    }
     .mud-appbar {
         width: 100%;
         display: flex;
@@ -26,6 +41,15 @@
         color: var(--mud-palette-appbar-text);
         background-color: var(--mud-palette-appbar-background);
         transition: margin 225ms cubic-bezier(0, 0, .2, 1) 0ms, width 225ms cubic-bezier(0, 0, .2, 1) 0ms;
+        border-radius: 50% 50% 6% 6% / 0% 0% 45% 45%;
+        padding: 0.1rem 0 0.35rem 0;
+        box-shadow: 0 0.1px 0.1px rgba(0, 0, 0, 0.02), 0 0.2px 0.2px rgba(0, 0, 0, 0.029), 0 0.4px 0.3px rgba(0, 0, 0, 0.036), 0 0.6px 0.5px rgba(0, 0, 0, 0.042), 0 0.9px 0.8px rgba(0, 0, 0, 0.048), 0 1.3px 1.1px rgba(0, 0, 0, 0.054), 0 2px 1.7px rgba(0, 0, 0, 0.061), 0 3.2px 2.7px rgba(0, 0, 0, 0.07), 0 6px 5px rgba(0, 0, 0, 0.09);
+    }
+    .mud-appbar-fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
     }
     .mudblazor-appbar-brand-text {
         letter-spacing: .1rem;
@@ -34,47 +58,55 @@
         font-size: 1.5rem;
         user-select: none;
     }
-    
-    
-    
     .mudblazor-appbar-band {
         background-image: url(../../_content/MudBlazor.Docs/MudAppbarCorner.svg);
         background-repeat: no-repeat;
         background-position: top right;
         overflow: hidden;
         fill:rgb(0, 134, 206);
+        background: none;
     }
-    
-    .mudblazor-appbar-band .st0{fill:rgb(0, 134, 206) !important;}
-    
-    
-    .mud-appbar-fixed {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
+    .mudblazor-appbar-band .st0 {
+        fill:rgb(0, 134, 206) !important;
     }
-    
-    
-    
-    
+    /*middele*/
+     #docspage {
+        margin-top: 1rem;
+    }
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        z-index: 1;
+        border-radius: 20px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: var(--mud-palette-action-default-hover);
+        border-radius: 20px;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
     /*LEFT NAV*/
-    .mud-nav-item {
+     .mud-nav-item {
         width: 100%;
         display: flex;
         justify-content: flex-start;
         text-decoration: none;
     }
-    
-    .mudblazor-navmenu .mud-nav-item:hover{
+    .mudblazor-navmenu .mud-nav-item:hover {
         border-left: 6px solid rgb(0, 134, 206);
     }
-    
-    
-    
+    .mudblazor-navmenu::-webkit-scrollbar-track {
+        background: transparent;
+        margin-top: 2.8rem;
+    }
     /*RIGHT NAV*/
-    
-    
+     .page-content-navigation {
+        margin: auto 0;
+    }
+    .pl-4 {
+        margin-top: 0.5rem;
+    }
     .pl-4::-webkit-scrollbar {
         width: 10px;
         height: 10px;
@@ -88,16 +120,16 @@
         background-color: rgba(0, 0, 0, 0.4);
         border-radius: 10px;
     }
-    
     }
     
     /*ALERT*/
      .mb-12, .my-12 {
+        display: table;
         margin-bottom: 1rem !important;
         border-radius: 30px;
         background: #E5E5E5;
         box-shadow: 0 0px 0.6px rgba(0, 0, 0, 0.05), 0 0px 1.4px rgba(0, 0, 0, 0.039), 0 0px 2.3px rgba(0, 0, 0, 0.034), 0 0px 3.5px rgba(0, 0, 0, 0.03), 0 0px 5px rgba(0, 0, 0, 0.027), 0 0px 7.1px rgba(0, 0, 0, 0.024), 0 0px 10.1px rgba(0, 0, 0, 0.021), 0 0px 14.6px rgba(0, 0, 0, 0.018), 0 0px 22.5px rgba(0, 0, 0, 0.014), 0 0px 40px rgba(0, 0, 0, 0.01);
-        padding: 1rem;
+        padding: 1rem 1.5rem 1.5rem 1rem;
         text-align: justify;
     }
     .docs-page-header .mud-typography-h3 {
@@ -110,11 +142,6 @@
     .pt-6, .py-6 {
         padding-top: 0 !important;
     }
-    
-    
-    
-    
-    
     /*SIMPLE ALERTS*/
      .docs-section-header {
         display: table;
@@ -132,14 +159,45 @@
         line-height: var(--mud-typography-body1-lineheight);
         letter-spacing: var(--mud-typography-body1-letterspacing);
     }
-    
-    
-    
-    
+    .mud-list-item {
+        width: 100%;
+        display: flex;
+        position: relative;
+        box-sizing: border-box;
+        text-align: start;
+        align-items: center;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        justify-content: flex-start;
+        text-decoration: none;
+    }
+    .mud-list-item-clickable:hover {
+        background-color: var(--mud-palette-action-default-hover);
+        transition: background-color 150ms cubic-bezier(.4, 0, .2, 1) 0ms;
+        border-radius: 20px;
+    }
+    /*TAB*/
+     .mud-tab:hover {
+        cursor: pointer;
+        background-color: var(--mud-palette-action-default-hover);
+        border-radius: 20px;
+    }
+    .mud-tab-slider.mud-tab-slider-horizontal {
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        transition: left .3s cubic-bezier(.64, .09, .08, 1);
+        width: 130px !important;
+        margin-left: 16px;
+        border-radius: 20px;
+    }
     /*ADD*/
      #carbonads .carbon-wrap {
         display: flex;
         border-radius: 5% 10% 5% 5% / 20% 0% 20% 20%;
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding;
+        background-clip: padding-box;
     }
     #carbonads {
         display: flex;
@@ -170,54 +228,36 @@
         right: 1.5rem;
         color: #0086ce;
     }
-    
-    
-    
-    
-    
     /*TABLE*/
-    .mud-table-container tr:nth-child(even) {
+     .mud-table-container tr:nth-child(even) {
         background: #f2f2f2;
     }
-    
-    
     /*TABS*/
-    .mud-popover.mud-popover-open {
+     .mud-popover.mud-popover-open {
         visibility: visible;
         opacity: 1;
         animation: mud-animation-fadein 251ms;
         z-index: 1100;
     }
-    
-    
-    
-    
-    
     /*TIMELINE*/
-    .mt-n1, .my-n1 {
+     .mt-n1, .my-n1 {
         margin-top: -4px !important;
         padding: 1rem;
     }
-    
-    
-    
     /*SCROLLTOTOP*/
-    .pb-6, .py-6:not(.mud-typography-body1)  {
+     .pb-6, .py-6:not(.mud-typography-body1) {
         background: #e5e5e5;
         width: 90%;
         margin: 0 auto;
     }
-    
-    
     #unique_id_scroll_section::-webkit-scrollbar-track {
-           background: transparent;
-           margin: 1rem 0;
+        background: transparent;
+        margin: 1rem 0;
     }
     #another_unique_identifier::-webkit-scrollbar-track {
-           background: transparent;
-           margin: 1rem 0;
+        background: transparent;
+        margin: 1rem 0;
     }
-    
     .mud-theme-secondary {
         color: var(--mud-palette-secondary-text) !important;
         background-color: var(--mud-palette-secondary) !important;
@@ -225,9 +265,6 @@
         text-align: center;
         margin: 0 auto;
     }
-    
-    
-    
     /*DIALOG*/
      .mud-grid {
         display: flex;
@@ -245,17 +282,12 @@
     .mud-grid-spacing-xs-3>.mud-grid-item {
         padding: 1rem;
     }
-    
     .mud-grid-item-md-6 {
         text-align: justify;
-        
         border-radius: var(--mud-default-borderradius);
         background: #e5e5e5;
         border-right: solid #e0e0e0 2px;
     }
-    
-    
-    
     /*LINKS*/
      .docs-code.docs-code-primary {
         color: var(--mud-palette-primary);
@@ -273,7 +305,8 @@
         padding: 1rem !important;
         text-align: justify;
     }
-    .docs-page-section {
+    /* */
+     .docs-page-section {
         padding: 1rem;
         margin-bottom: 50px;
         border-radius: 20px;
@@ -345,12 +378,6 @@
         box-shadow: 0 0px 0.5px -9px rgba(0, 0, 0, 0.101), 0 0px 1.1px -9px rgba(0, 0, 0, 0.145), 0 0px 2.1px -9px rgba(0, 0, 0, 0.18), 0 0px 3.8px -9px rgba(0, 0, 0, 0.215), 0 0px 7.1px -9px rgba(0, 0, 0, 0.259), 0 0px 17px -9px rgba(0, 0, 0, 0.36);
         padding: 0 1rem 0 1rem;
     }
-    
-    
-    
-    
-    
-    
     /*CODE*/
      .mud-codeblock {
         height: 100%;
@@ -358,8 +385,10 @@
         border-radius: var(--mud-default-borderradius);
         padding: 1rem;
         overflow: auto;
-        margin: 0.1rem 0 7rem 0;
         box-shadow: 0 0px 0.6px rgba(0, 0, 0, 0.05), 0 0px 1.4px rgba(0, 0, 0, 0.039), 0 0px 2.3px rgba(0, 0, 0, 0.034), 0 0px 3.5px rgba(0, 0, 0, 0.03), 0 0px 5px rgba(0, 0, 0, 0.027), 0 0px 7.1px rgba(0, 0, 0, 0.024), 0 0px 10.1px rgba(0, 0, 0, 0.021), 0 0px 14.6px rgba(0, 0, 0, 0.018), 0 0px 22.5px rgba(0, 0, 0, 0.014), 0 0px 40px rgba(0, 0, 0, 0.01);
+    }
+    .mud-codeblock:after {
+        margin-top: 7rem;
     }
     .mud-codeblock::-webkit-scrollbar {
         width: 10px;
@@ -374,12 +403,6 @@
         background-color: rgba(0, 0, 0, 0.4);
         border-radius: 10px;
     }
-    
-    
-    
-    
-    
-    
     /*MIDDEL*/
      .docs-page-section {
         margin-bottom: 50px;
@@ -395,7 +418,7 @@
         --mud-palette-primary-rgb: rgb(0, 134, 206);
         --mud-palette-primary-text: #ffffff;
         --mud-palette-primary-darken: rgb(0, 134, 206);
-        --mud-palette-primary-lighten: rgb(45, 182, 221);
+        --mud-palette-primary-lighten: rgb(25, 162, 201);
         --mud-palette-primary-hover: rgba(89, 74, 226, 0.06);
         --mud-palette-secondary: #FF4081;
         --mud-palette-secondary-rgb:rgb(255, 64, 129);
@@ -406,14 +429,14 @@
         --mud-palette-tertiary: rgb(45, 182, 221);
         --mud-palette-tertiary-rgb: 30, 200, 165;
         --mud-palette-tertiary-text: #ffffff;
-        --mud-palette-tertiary-darken: rgb(45, 182, 221);
-        --mud-palette-tertiary-lighten: rgb(45, 182, 221);
+        --mud-palette-tertiary-darken: rgb(25, 162, 201);
+        --mud-palette-tertiary-lighten: rgb(25, 162, 201);
         --mud-palette-tertiary-hover: rgba(30, 200, 165, 0.06);
-        --mud-palette-info: rgb(45, 182, 221);
-        --mud-palette-info-rgb: rgb(45, 182, 221);
+        --mud-palette-info: rgb(25, 162, 201);
+        --mud-palette-info-rgb: rgb(25, 162, 201);
         --mud-palette-info-text: #ffffff;
         --mud-palette-info-darken: rgb(0, 134, 206);
-        --mud-palette-info-lighten: rgb(45, 182, 221);
+        --mud-palette-info-lighten: rgb(25, 162, 201);
         --mud-palette-info-hover: rgba(33, 150, 243, 0.06);
         --mud-palette-success: #00C853;
         --mud-palette-success-rgb: 0, 200, 83;
