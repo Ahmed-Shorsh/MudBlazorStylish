@@ -1,1044 +1,1226 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;640&display=swap');
+
+/*brand text*/
+ .mudblazor-appbar-brand-text {
+	margin-left: 12px;
+	font-size: 1.5rem;
+	user-select: none;
+	font-family:'Raleway', sans-serif;
+	font-weight: 500 !important;
+}
 
 
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;640&display=swap');
-        
-        /*brand text*/
-         .mudblazor-appbar-brand-text {
-            margin-left: 12px;
-            font-size: 1.5rem;
-            user-select: none;
-            font-family:'Raleway', sans-serif;
-            font-weight: 500 !important;
-        }
-        /*SUPPORT*/
-         .mud-button-label {
-            width: 100%;
-            display: inherit;
-            align-items: inherit;
-            justify-content: inherit;
-            padding-left: 0.3rem;
-            font-size: 1.1em;
-        }
-        /*ICON*/
-         .mud-icon-button-edge-start {
-            margin-left: -12px;
-            margin-inline-start: -12px;
-            margin-inline-end: unset;
-        }
-        /*BRAND*/
-         .mudblazor-brand {
-            margin: 1.2rem 0 0;
-            padding: 0;
-        }
-        .mud-appbar {
-            width: 100%;
-            display: flex;
-            position: relative;
-            z-index: var(--mud-zindex-appbar);
-            box-sizing: border-box;
-            flex-shrink: 0;
-            flex-direction: column;
-            color: var(--mud-palette-appbar-text);
-            background-color: var(--mud-palette-appbar-background);
-            transition: margin 225ms cubic-bezier(0, 0, .2, 1) 0ms, width 225ms cubic-bezier(0, 0, .2, 1) 0ms;
-             border-bottom-left-radius: 30px;
-             border-bottom-right-radius: 30px;
-            padding: 0.1rem 0 0.35rem 0;
-            box-shadow: 0 0.1px 0.1px rgba(0, 0, 0, 0.02), 0 0.2px 0.2px rgba(0, 0, 0, 0.029), 0 0.4px 0.3px rgba(0, 0, 0, 0.036), 0 0.6px 0.5px rgba(0, 0, 0, 0.042), 0 0.9px 0.8px rgba(0, 0, 0, 0.048), 0 1.3px 1.1px rgba(0, 0, 0, 0.054), 0 2px 1.7px rgba(0, 0, 0, 0.061), 0 3.2px 2.7px rgba(0, 0, 0, 0.07), 0 6px 5px rgba(0, 0, 0, 0.09);
-        }
-        .mud-appbar-fixed {
-            position: fixed;
-            top: 0;
-            right: 0;
-            left: 0;
-        }
-        .mudblazor-appbar-brand-text {
-            letter-spacing: .1rem;
-            font-weight: 400;
-            margin-left: 12px;
-            font-size: 1.5rem;
-            user-select: none;
-        }
-    
-    
-        /*middele*/
-         #docspage {
-            margin-top: 1rem;
-        }
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-            z-index: 1;
-            border-radius: 20px;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: var(--mud-palette-action-default-hover);
-            border-radius: 20px;
-        }
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        
-        
-        /*LEFT NAV*/
-    
-    .mud-nav-link{
-        transition: all 200ms;
-    }
-     .mud-nav-link.active:not(.mud-nav-link-disabled) {
-        font-weight: 500 !important;
-        color: var(--mud-palette-primary);
-        background-color: var(--mud-palette-action-default-hover);
-        box-shadow: inset 7px 0 0 0 rgb(0, 134, 206);
-    
-    }
-    .mudblazor-navmenu .mud-nav-link:hover{
-        box-shadow: inset 7px 0 0 0 rgb(0, 134, 206);
-    
-    }
-    
-         .mud-nav-item {
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-            text-decoration: none;
-        }
-     
-        .mudblazor-navmenu::-webkit-scrollbar-track {
-            background: transparent;
-            margin-top: 2.8rem;
-        }
-    .mudblazor-navmenu::-webkit-scrollbar-thumb {
-         background: var(--mud-palette-action-default-hover);
-         border-radius: 20px;
-        visibility:hidden;
-    }
-    .mudblazor-navmenu:hover::-webkit-scrollbar-thumb {
-        visibility:visible;
-    }
-    
-    
-     
-    .mudblazor-appbar-band {
-        background-image: none;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        /*RIGHT NAV*/
-         .page-content-navigation {
-            margin: auto 0;
-        }
-        .pl-4 {
-            margin-top: 0.5rem;
-        }
-        .pl-4::-webkit-scrollbar {
-            width: 10px;
-            height: 10px;
-        }
-        .pl-4::-webkit-scrollbar-track {
-            background-color: transparent;
-            border-radius: 10px;
-            margin: 0 1rem 0 1rem;
-        }
-        .pl-4::-webkit-scrollbar-thumb {
-            background-color: rgba(0, 0, 0, 0.4);
-            border-radius: 10px;
-        }
-    
-    
-          /*ALERT*/
-           .mb-12, .my-12 {
-            display: table;
-            margin-bottom: 1rem !important;
-            border-radius: 30px;
-            background: #ffffff;
-            box-shadow: 0 0px 0.6px rgba(0, 0, 0, 0.05), 0 0px 1.4px rgba(0, 0, 0, 0.039), 0 0px 2.3px rgba(0, 0, 0, 0.034), 0 0px 3.5px rgba(0, 0, 0, 0.03), 0 0px 5px rgba(0, 0, 0, 0.027), 0 0px 7.1px rgba(0, 0, 0, 0.024), 0 0px 10.1px rgba(0, 0, 0, 0.021), 0 0px 14.6px rgba(0, 0, 0, 0.018), 0 0px 22.5px rgba(0, 0, 0, 0.014), 0 0px 40px rgba(0, 0, 0, 0.01);
-            padding: 1rem 1.5rem 1.5rem 1rem;
-            text-align: justify;
-        }
-        .docs-page-header .mud-typography-h3 {
-            font-size: 40px;
-            margin-bottom: 1.5rem;
-        }
-        .pb-6, .py-6 {
-            padding-bottom: 0 !important;
-        }
-        .pt-6, .py-6 {
-            padding-top: 0 !important;
-        }
-        /*SIMPLE ALERTS*/
-         .docs-section-header {
-            display: table;
-            padding: 0.1rem 1rem 1rem 1rem !important;
-            text-align: justify;
-        }
-        .docs-section-header .mud-typography-h4 {
-            font-size: 30px;
-            margin: 1rem 0 1rem 0;
-        }
-        .mud-typography-body1 {
-            font-size: var(--mud-typography-body1-size);
-            font-family: var(--mud-typography-body1-family);
-            font-weight: var(--mud-typography-body1-weight);
-            line-height: var(--mud-typography-body1-lineheight);
-            letter-spacing: var(--mud-typography-body1-letterspacing);
-        }
-    
-    
-    /*LIST*/
-    
-    
-    
-    
-    
-    
-    .mud-paper-square {
-        border-radius: 20px;
-    }
-    
-    .mud-list {
-        margin: 0;
-        padding: 0;
-        position: relative;
-        list-style: none;
-    
-    }
-        .mud-list-item {
-            width: 100%;
-            display: flex;
-            position: relative;
-            box-sizing: border-box;
-            text-align: start;
-            align-items: center;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            justify-content: flex-start;
-            text-decoration: none;
-        }
-    .mud-list.mud-list-padding {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    
-    
-    
-    .mud-list-item-clickable:last-child {
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;                                                                                
-        }
-    
-    .mud-list-item-clickable:first-child:not(.mud-nested-list .mud-list-item-clickable) {     
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-    
-    
-    
-    .mud-nested-list .mud-list-item-clickable:last-child:hover {
-            background-color: var(--mud-palette-action-default-hover);
-            transition: background-color 150ms cubic-bezier(.4, 0, .2, 1) 0ms;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px; 
-        
-        }
-    
-    
-    
-        /*TAB*/
-    
-    .mud-tabs-toolbar-content {
-        width: 100%;
-        flex: 1 1 auto;
-        display: inline-block;
-        position: relative;
-        white-space: nowrap;
-        padding: 0 1rem;
-        overflow: hidden;
-    }
-    
-         .mud-tab:hover {
-            cursor: pointer;
-            background-color: var(--mud-palette-action-default-hover);
-            border-radius: 20px;
-        }
-    
-     .mud-tab:first-child {
-            border-radius: 20px;
-        }
-    .mud-tabs-toolbar{
-    border-radius: 20px;
-    }
-    
+
+/*SUPPORT*/
+ .mud-button-label {
+	width: 100%;
+	display: inherit;
+	align-items: inherit;
+	justify-content: inherit;
+	padding-left: 0.3rem;
+	font-size: 1.1em;
+}
+
+
+
+/*ICON*/
+ .mud-icon-button-edge-start {
+	margin-left: -12px;
+	margin-inline-start: -12px;
+	margin-inline-end: unset;
+}
+
+
+
+/*BRAND*/
+ .mudblazor-brand {
+	margin: 1.2rem 0 0;
+	padding: 0;
+}
+
+.mud-appbar {
+	width: 100%;
+	display: flex;
+	position: relative;
+	z-index: var(--mud-zindex-appbar);
+	box-sizing: border-box;
+	flex-shrink: 0;
+	flex-direction: column;
+	color: var(--mud-palette-appbar-text);
+	background-color: var(--mud-palette-appbar-background);
+	transition: margin 225ms cubic-bezier(0, 0, .2, 1) 0ms, width 225ms cubic-bezier(0, 0, .2, 1) 0ms;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	padding: 0.1rem 0 0.35rem 0;
+	box-shadow: 0 0.1px 0.1px rgba(0, 0, 0, 0.02), 0 0.2px 0.2px rgba(0, 0, 0, 0.029), 0 0.4px 0.3px rgba(0, 0, 0, 0.036), 0 0.6px 0.5px rgba(0, 0, 0, 0.042), 0 0.9px 0.8px rgba(0, 0, 0, 0.048), 0 1.3px 1.1px rgba(0, 0, 0, 0.054), 0 2px 1.7px rgba(0, 0, 0, 0.061), 0 3.2px 2.7px rgba(0, 0, 0, 0.07), 0 6px 5px rgba(0, 0, 0, 0.09);
+}
+
+
+.mud-appbar-fixed {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+
+.mudblazor-appbar-brand-text {
+	letter-spacing: .1rem;
+	font-weight: 400;
+	margin-left: 12px;
+	font-size: 1.5rem;
+	user-select: none;
+}
+
+
+
+
+
+/*middele*/
+ .mud-grid-spacing-xs-3 {
+	width: calc(95% + 10rem) !important;
+}
+
+.pb-6, .py-6:not(.mud-typography-body1) {
+	background: transparent !important;
+	/*   width: 100% !important; */
+	margin: 0 auto;
+}
+
+
+.mud-tabs-toolbar-success .mud-tab.mud-tab-active:hover {
+	background-color: transparent;
+}
+
+
+.mud-tabs-toolbar-success {
+	background-color: var(--mud-palette-appbar-background);
+	color: var(--mud-palette-success-text);
+}
+
+
+
+
+#docspage {
+	margin-top: 1rem;
+}
+
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	z-index: 1;
+	border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--mud-palette-action-default-hover);
+	border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+
+
+
+
+
+/*LEFT NAV*/
+ .mud-nav-link {
+	transition: all 200ms;
+}
+
+.mud-nav-link.active:not(.mud-nav-link-disabled) {
+	font-weight: 500 !important;
+	color: var(--mud-palette-primary);
+	background-color: var(--mud-palette-action-default-hover);
+	box-shadow: inset 7px 0 0 0 rgb(0, 134, 206);
+}
+
+.mudblazor-navmenu .mud-nav-link:hover {
+	box-shadow: inset 7px 0 0 0 rgb(0, 134, 206);
+}
+
+.mud-nav-item {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	text-decoration: none;
+}
+
+
+.mudblazor-navmenu::-webkit-scrollbar-track {
+	background: transparent;
+	margin-top: 2.8rem;
+}
+
+.mudblazor-navmenu::-webkit-scrollbar-thumb {
+	background: var(--mud-palette-action-default-hover);
+	border-radius: 20px;
+	visibility:hidden;
+}
+
+.mudblazor-navmenu:hover::-webkit-scrollbar-thumb {
+	visibility:visible;
+}
+.mudblazor-appbar-band {
+	background-image: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*RIGHT NAV*/
+ .page-content-navigation {
+	margin: auto 0;
+}
+.pl-4 {
+	margin-top: 0.5rem;
+}
+.pl-4::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+.pl-4::-webkit-scrollbar-track {
+	background-color: transparent;
+	border-radius: 10px;
+	margin: 0 1rem 0 1rem;
+}
+.pl-4::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+      /*ALERT*/
+      .mb-12, .my-12 {
+      	display: table;
+      	margin-bottom: 1rem !important;
+      	border-radius: 30px;
+      	background: #ffffff;
+      	box-shadow: 0 0px 0.6px rgba(0, 0, 0, 0.05), 0 0px 1.4px rgba(0, 0, 0, 0.039), 0 0px 2.3px rgba(0, 0, 0, 0.034), 0 0px 3.5px rgba(0, 0, 0, 0.03), 0 0px 5px rgba(0, 0, 0, 0.027), 0 0px 7.1px rgba(0, 0, 0, 0.024), 0 0px 10.1px rgba(0, 0, 0, 0.021), 0 0px 14.6px rgba(0, 0, 0, 0.018), 0 0px 22.5px rgba(0, 0, 0, 0.014), 0 0px 40px rgba(0, 0, 0, 0.01);
+      	padding: 1rem 1.5rem 1.5rem 1rem;
+      	text-align: justify;
+      }
+      .docs-page-header .mud-typography-h3 {
+      	font-size: 40px;
+      	margin-bottom: 1.5rem;
+      }
+      .pb-6, .py-6 {
+      	padding-bottom: 0 !important;
+      }
+      .pt-6, .py-6 {
+      	padding-top: 0 !important;
+      }
+      /*SIMPLE ALERTS*/
+      .docs-section-header {
+      	display: table;
+      	padding: 0.1rem 1rem 1rem 1rem !important;
+      	text-align: justify;
+      }
+      .docs-section-header .mud-typography-h4 {
+      	font-size: 30px;
+      	margin: 1rem 0 1rem 0;
+      }
+      .mud-typography-body1 {
+      	font-size: var(--mud-typography-body1-size);
+      	font-family: var(--mud-typography-body1-family);
+      	font-weight: var(--mud-typography-body1-weight);
+      	line-height: var(--mud-typography-body1-lineheight);
+      	letter-spacing: var(--mud-typography-body1-letterspacing);
+      }
+      /*LIST*/
+      .mud-paper-square {
+      	border-radius: 20px;
+      }
+      .mud-list {
+      	margin: 0;
+      	padding: 0;
+      	position: relative;
+      	list-style: none;
+      }
+
+
+      .mud-list-item {
+      	width: 100%;
+      	display: flex;
+      	position: relative;
+      	box-sizing: border-box;
+      	text-align: start;
+      	align-items: center;
+      	padding-top: 8px;
+      	padding-bottom: 8px;
+      	justify-content: flex-start;
+      	text-decoration: none;
+      }
+      .mud-list.mud-list-padding {
+      	padding-top: 0;
+      	padding-bottom: 0;
+      }
+      .mud-list-item-clickable:last-child {
+      	border-bottom-left-radius: 20px;
+      	border-bottom-right-radius: 20px;
+      }
+      .mud-list-item-clickable:first-child:not(.mud-nested-list .mud-list-item-clickable) {
+      	border-top-left-radius: 20px;
+      	border-top-right-radius: 20px;
+      }
+      .mud-nested-list .mud-list-item-clickable:last-child:hover {
+      	background-color: var(--mud-palette-action-default-hover);
+      	transition: background-color 150ms cubic-bezier(.4, 0, .2, 1) 0ms;
+      	border-bottom-left-radius: 20px;
+      	border-bottom-right-radius: 20px;
+      }
+
+
+
+
+
+
+      /*TAB*/
+      .mud-tabs-toolbar-content {
+      	width: 100%;
+      	flex: 1 1 auto;
+      	display: inline-block;
+      	position: relative;
+      	white-space: nowrap;
+      	padding: 0 1rem;
+      	overflow: hidden;
+      }
+      .mud-tab:hover {
+      	cursor: pointer;
+      	background-color: var(--mud-palette-action-default-hover);
+      	border-radius: 20px;
+      }
+      .mud-tab:first-child {
+      	border-radius: 20px;
+      }
+      .mud-tabs-toolbar {
+      	border-radius: 20px;
+      }
       .mud-popover.mud-popover-open {
-            visibility: visible;
-            opacity: 1;
-            animation: mud-animation-fadein 251ms;
-            z-index: 1100;
-        }
-    
-    .mud-tabs.mud-tabs-rounded .mud-tabs-panels {
-        border-radius: 20px ;
-        width: max-content  !important;
-    }
-    
-    .mud-paper-outlined{
-        border-radius: 20px ;
-    }
-    .mud-tabs-panels{
-                border-radius: 20px !important;
-            width: max-content  !important;
-            }	
-    
-        /*ADD*/
-         #carbonads .carbon-wrap {
-            display: flex;
-            border-radius: 5% 10% 5% 5% / 20% 0% 20% 20%;
-            -webkit-background-clip: padding-box;
-            -moz-background-clip: padding;
-            background-clip: padding-box;
-        }
-        #carbonads {
-            display: flex;
-            width: 100%;
-            max-width: 400px;
-            background-color: var(--mud-palette-surface);
-            box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
-            border-radius: var(--mud-default-borderradius);
-            z-index: 100;
-            animation: mud-animation-fadein ease .15s;
-            border-radius: 5% 10% 5% 5% / 20% 0% 20% 20%;
-            background: #f5f6fa;
-            box-shadow: 0 0px 0.6px rgba(0, 0, 0, 0.05), 0 0px 1.4px rgba(0, 0, 0, 0.039), 0 0px 2.3px rgba(0, 0, 0, 0.034), 0 0px 3.5px rgba(0, 0, 0, 0.03), 0 0px 5px rgba(0, 0, 0, 0.027), 0 0px 7.1px rgba(0, 0, 0, 0.024), 0 0px 10.1px rgba(0, 0, 0, 0.021), 0 0px 14.6px rgba(0, 0, 0, 0.018), 0 0px 22.5px rgba(0, 0, 0, 0.014), 0 0px 40px rgba(0, 0, 0, 0.01);
-            margin: 4.5rem 0 4.5rem 0;
-        }
-        #carbonads .carbon-poweredby {
-            display: block;
-            padding: 6px 8px;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: .5px;
-            font-weight: 600;
-            font-size: 8px;
-            line-height: 1;
-            border-top-left-radius: 3px;
-            position: absolute;
-            bottom: 0;
-            right: 1.5rem;
-            color: #0086ce;
-        }
-        /*TABLE*/
-    
-    .mud-sm-table .mud-table-row:last-child .mud-table-cell:first-child{
-    border-bottom-left-radius: 20px;
-    }
-    .mud-sm-table .mud-table-row:last-child .mud-table-cell:last-child{
-    border-bottom-right-radius: 20px;
-    }
-    .mud-table-hover .mud-table-container .mud-table-root .mud-table-body .mud-table-row:last-child():hover {
-        background-color: var(--mud-palette-table-hover);
-    }
-    
-    .mud-table-container::-webkit-scrollbar-track {
-        background: transparent;
-        margin: 1rem;
-    }
-    .mud-table-container::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-        z-index: 1;
-        border-radius: 20px;
-    }
-    .mud-table-container::-webkit-scrollbar-corner{
-        background: transparent;
-    }
-    
-    .mud-table-head .mud-table-row:first-child .mud-table-cell:first-child{
-    border-top-left-radius: 20px;
-    }
-    .mud-table-head .mud-table-row:first-child .mud-table-cell:last-child{
-    border-top-right-radius: 20px;
-    }
-       
-        /*TIMELINE*/
-         .mt-n1, .my-n1 {
-            margin-top: -4px !important;
-            padding: 1rem;
-        }
-    
-    /*DATE-PICKER*/
-    .mud-theme-secondary:first-child {
-        color: var(--mud-palette-secondary-text) !important;
-        background-color: var(--mud-palette-secondary) !important;
-        width: 100% !important;
-        text-align: center;
-        margin: 0 auto;
-    }
-    
-        /*SCROLLTOTOP*/
-         .pb-6, .py-6:not(.mud-typography-body1) {
-            background: #ffffff;
-            width: 90%;
-            margin: 0 auto;
-        }
-        #unique_id_scroll_section::-webkit-scrollbar-track {
-            background: transparent;
-            margin: 1rem 0;
-        }
-        #another_unique_identifier::-webkit-scrollbar-track {
-            background: transparent;
-            margin: 1rem 0;
-        }
-        .mud-theme-secondary {
-            color: var(--mud-palette-secondary-text) !important;
-            background-color: var(--mud-palette-secondary) !important;
-            width: 15%;
-            text-align: center;
-            margin: 0 auto;
-        }
-        /*DIALOG*/
-         .mud-grid {
-            display: flex;
-            flex-wrap: wrap;
-            box-sizing: border-box;
-            border-radius: var(--mud-default-borderradius);
-            background: #ffffff;
-            box-shadow: 0 0px 0.6px rgb(0 0 0 / 5%), 0 0px 1.4px rgb(0 0 0 / 4%), 0 0px 2.3px rgb(0 0 0 / 3%), 0 0px 3.5px rgb(0 0 0 / 3%), 0 0px 5px rgb(0 0 0 / 3%), 0 0px 7.1px rgb(0 0 0 / 2%), 0 0px 10.1px rgb(0 0 0 / 2%), 0 0px 14.6px rgb(0 0 0 / 2%), 0 0px 22.5px rgb(0 0 0 / 1%), 0 0px 40px rgb(0 0 0 / 1%);
-            margin: 0 auto;
-            margin-bottom: 6rem;
-        }
-        .mud-grid-spacing-xs-3 {
-            width: calc(65% + 10rem);
-        }
-        .mud-grid-spacing-xs-3>.mud-grid-item {
-            padding: 1rem;
-        }
-        .mud-grid-item-md-6 {
-            text-align: justify;
-            border-radius: var(--mud-default-borderradius);
-            background: #ffffff;
-            border-right: solid #f5f6fa 2px;
-        }
-        /*LINKS*/
-         .docs-code.docs-code-primary {
-            color: var(--mud-palette-primary);
-            font-family: var(--mud-typography-body1-family);
-            font-size: var(--mud-typography-body1-size);
-            font-weight: var(--mud-typography-body1-weight);
-            line-height: var(--mud-typography-body1-lineheight);
-            letter-spacing: var(--mud-typography-body1-letterspacing);
-            cursor: pointer;
-        }
-        /*LIST*/
-         .docs-page-section[api-link-section] {
-            margin: 0.1rem 0 7rem 0;
-            display: table;
-            padding: 1rem !important;
-            text-align: justify;
-        }
-        /* */
-         .docs-page-section {
-            padding: 1rem;
-            margin-bottom: 50px;
-            border-radius: 20px;
-            background: #ffffff;
-            box-shadow: 0 0px 0.6px rgb(0 0 0 / 5%), 0 0px 1.4px rgb(0 0 0 / 4%), 0 0px 2.3px rgb(0 0 0 / 3%), 0 0px 3.5px rgb(0 0 0 / 3%), 0 0px 5px rgb(0 0 0 / 3%), 0 0px 7.1px rgb(0 0 0 / 2%), 0 0px 10.1px rgb(0 0 0 / 2%), 0 0px 14.6px rgb(0 0 0 / 2%), 0 0px 22.5px rgb(0 0 0 / 1%), 0 0px 40px rgb(0 0 0 / 1%);
-        }
-        .docs-code {
-            display: inline-block;
-            padding: 0;
-            direction: ltr;
-            font-size: .85em;
-            font-weight: 900;
-            font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-            line-height: 1.4;
-            border-radius: 2px;
-            -webkit-font-smoothing: subpixel-antialiased;
-            background: transparent !important;
-        }
-        /* */
-         .docs-page-apilinks ul li a .docs-code {
-            list-style: none;
-            margin: 0 1rem 0 1rem;
-            color: var(--mud-palette-primary);
-            padding:10px 0;
-            cursor:pointer;
-            transform: translateY(1px);
-            transform: translateX(-5px);
-        }
-        /*overlay*/
-         .mud-skeleton {
-            height: 1.7em;
-            display: block;
-            background-color: rgba(0, 0, 0, .11);
-            border-radius: 20px;
-        }
-        /*BODY*/
-         .docs-section-content {
-            padding: 20px;
-            margin-bottom: 40px;
-            background-color: var(--mud-palette-surface);
-            margin: auto;
-            display: flex;
-            outline: 0;
-            position: relative;
-            justify-content: center;
-            border-radius: 20px;
-            background: #f5f6fa;
-            box-shadow: 0 0px 0.6px rgba(0, 0, 0, 0.05), 0 0px 1.4px rgba(0, 0, 0, 0.039), 0 0px 2.3px rgba(0, 0, 0, 0.034), 0 0px 3.5px rgba(0, 0, 0, 0.03), 0 0px 5px rgba(0, 0, 0, 0.027), 0 0px 7.1px rgba(0, 0, 0, 0.024), 0 0px 10.1px rgba(0, 0, 0, 0.021), 0 0px 14.6px rgba(0, 0, 0, 0.018), 0 0px 22.5px rgba(0, 0, 0, 0.014), 0 0px 40px rgba(0, 0, 0, 0.01);
-        }
-        .mud-elevation-4 {
-            box-shadow: var(--mud-elevation-4);
-            z-index: 1199;
-        }
-        .mud-elevation-0 {
-            box-shadow: var(--mud-elevation-0);
-            z-index: 1199;
-        }
-        /*SLIDER*/
-         .mud-slider>input {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            position: relative;
-            display: block;
-            width: 30%;
-            background-color: transparent;
-            cursor: pointer;
-            border-radius: 30px;
-            background: #ffffff;
-            box-shadow: 0 0px 0.5px -9px rgba(0, 0, 0, 0.101), 0 0px 1.1px -9px rgba(0, 0, 0, 0.145), 0 0px 2.1px -9px rgba(0, 0, 0, 0.18), 0 0px 3.8px -9px rgba(0, 0, 0, 0.215), 0 0px 7.1px -9px rgba(0, 0, 0, 0.259), 0 0px 17px -9px rgba(0, 0, 0, 0.36);
-            padding: 0 1rem 0 1rem;
-        }
-        /*CODE*/
-         .mud-codeblock {
-            height: 100%;
-            background-color: var(--mud-palette-black);
-            border-radius: var(--mud-default-borderradius);
-            padding: 1rem;
-            overflow: auto;
-            box-shadow: 0 0px 0.6px rgba(0, 0, 0, 0.05), 0 0px 1.4px rgba(0, 0, 0, 0.039), 0 0px 2.3px rgba(0, 0, 0, 0.034), 0 0px 3.5px rgba(0, 0, 0, 0.03), 0 0px 5px rgba(0, 0, 0, 0.027), 0 0px 7.1px rgba(0, 0, 0, 0.024), 0 0px 10.1px rgba(0, 0, 0, 0.021), 0 0px 14.6px rgba(0, 0, 0, 0.018), 0 0px 22.5px rgba(0, 0, 0, 0.014), 0 0px 40px rgba(0, 0, 0, 0.01);
-        }
-        .mud-codeblock:after {
-            margin-top: 7rem;
-        }
-        .mud-codeblock::-webkit-scrollbar {
-            width: 10px;
-            height: 10px;
-        }
-        .mud-codeblock::-webkit-scrollbar-track {
-            background-color: transparent;
-            border-radius: 10px;
-            margin: 0 1rem 0 1rem;
-        }
-        .mud-codeblock::-webkit-scrollbar-thumb {
-            background-color: rgba(0, 0, 0, 0.4);
-            border-radius: 10px;
-        }
-        /*MIDDEL*/
-         .docs-page-section {
-            margin-bottom: 50px;
-            border-radius: 20px;
-            background: #ffffff;
-            box-shadow: 0 0px 0.6px rgba(0, 0, 0, 0.05), 0 0px 1.4px rgba(0, 0, 0, 0.039), 0 0px 2.3px rgba(0, 0, 0, 0.034), 0 0px 3.5px rgba(0, 0, 0, 0.03), 0 0px 5px rgba(0, 0, 0, 0.027), 0 0px 7.1px rgba(0, 0, 0, 0.024), 0 0px 10.1px rgba(0, 0, 0, 0.021), 0 0px 14.6px rgba(0, 0, 0, 0.018), 0 0px 22.5px rgba(0, 0, 0, 0.014), 0 0px 40px rgba(0, 0, 0, 0.01);
-        }
-        
-    
-        :root {
-            --mud-palette-black: #272c34;
-            --mud-palette-white: #ffffff;
-            --mud-palette-primary: #0086ce;
-            --mud-palette-primary-rgb: rgb(0, 134, 206);
-            --mud-palette-primary-text: #ffffff;
-            --mud-palette-primary-darken: rgb(0, 134, 206);
-            --mud-palette-primary-lighten: rgb(25, 162, 201);
-            --mud-palette-primary-hover: rgba(89, 74, 226, 0.06);
-            --mud-palette-secondary: #FF4081;
-            --mud-palette-secondary-rgb:rgb(255, 64, 129);
-            --mud-palette-secondary-text: #ffffff;
-            --mud-palette-secondary-darken: rgb(255, 26, 104);
-            --mud-palette-secondary-lighten: rgb(255, 102, 154);
-            --mud-palette-secondary-hover: rgba(255, 64, 129, 0.06);
-            --mud-palette-tertiary: rgb(45, 182, 221);
-            --mud-palette-tertiary-rgb: 30, 200, 165;
-            --mud-palette-tertiary-text: #ffffff;
-            --mud-palette-tertiary-darken: rgb(25, 162, 201);
-            --mud-palette-tertiary-lighten: rgb(25, 162, 201);
-            --mud-palette-tertiary-hover: rgba(30, 200, 165, 0.06);
-            --mud-palette-info: rgb(25, 162, 201);
-            --mud-palette-info-rgb: rgb(25, 162, 201);
-            --mud-palette-info-text: #ffffff;
-            --mud-palette-info-darken: rgb(0, 134, 206);
-            --mud-palette-info-lighten: rgb(25, 162, 201);
-            --mud-palette-info-hover: rgba(33, 150, 243, 0.06);
-            --mud-palette-success: #00C853;
-            --mud-palette-success-rgb: 0, 200, 83;
-            --mud-palette-success-text: #ffffff;
-            --mud-palette-success-darken: rgb(0, 162, 67);
-            --mud-palette-success-lighten: rgb(0, 238, 99);
-            --mud-palette-success-hover: rgba(0, 200, 83, 0.06);
-            --mud-palette-warning: #FF9800;
-            --mud-palette-warning-rgb: 255, 152, 0;
-            --mud-palette-warning-text: #ffffff;
-            --mud-palette-warning-darken: rgb(217, 129, 0);
-            --mud-palette-warning-lighten: rgb(255, 167, 38);
-            --mud-palette-warning-hover: rgba(255, 152, 0, 0.06);
-            --mud-palette-error: #F44336;
-            --mud-palette-error-rgb: 244, 67, 54;
-            --mud-palette-error-text: #ffffff;
-            --mud-palette-error-darken: rgb(242, 33, 18);
-            --mud-palette-error-lighten: rgb(246, 101, 90);
-            --mud-palette-error-hover: rgba(244, 67, 54, 0.06);
-            --mud-palette-dark: #424242;
-            --mud-palette-dark-rgb: 66, 66, 66;
-            --mud-palette-dark-text: #ffffff;
-            --mud-palette-dark-darken: rgb(47, 47, 47);
-            --mud-palette-dark-lighten: rgb(85, 85, 85);
-            --mud-palette-dark-hover: rgba(66, 66, 66, 0.06);
-            --mud-palette-text-primary: #424242;
-            --mud-palette-text-secondary: rgba(0, 0, 0, 0.54);
-            --mud-palette-text-disabled: rgba(0, 0, 0, 0.38);
-            --mud-palette-action-default: rgba(0, 0, 0, 0.54);
-            --mud-palette-action-default-hover: rgba(0, 0, 0, 0.06);
-            --mud-palette-action-disabled: rgba(0, 0, 0, 0.26);
-            --mud-palette-action-disabled-background: rgba(0, 0, 0, 0.12);
-            --mud-palette-surface: #ffffff;
-            --mud-palette-background: #f5f6fa;
-            --mud-palette-background-grey: #f5f6fa;
-            --mud-palette-drawer-background: #f5f6fa;
-            --mud-palette-drawer-text: #424242;
-            --mud-palette-drawer-icon: #616161;
-            --mud-palette-appbar-background: rgb(0, 134, 206);
-            --mud-palette-appbar-text: #ffffff;
-            --mud-palette-lines-default: rgba(0, 0, 0, 0.12);
-            --mud-palette-lines-inputs: #BDBDBD;
-            --mud-palette-table-lines: rgba(224, 224, 224, 1);
-            --mud-palette-table-striped: rgba(0, 0, 0, 0.02);
-            --mud-palette-table-hover: #e5e5e5;
-            --mud-palette-divider: #f5f6fa;
-            --mud-palette-divider-light: rgba(0, 0, 0, 0.8);
-            --mud-palette-grey-default: #9E9E9E;
-            --mud-palette-grey-light: #BDBDBD;
-            --mud-palette-grey-lighter: #E0E0E0;
-            --mud-palette-grey-dark: #757575;
-            --mud-palette-grey-darker: #616161;
-            --mud-palette-overlay-dark: rgba(33, 33, 33, 0.5);
-            --mud-palette-overlay-light: rgba(255, 255, 255, 0.5);
-            --mud-elevation-0: none;
-            --mud-elevation-1: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-            --mud-elevation-2: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-            --mud-elevation-3: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
-            --mud-elevation-4: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-            --mud-elevation-5: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
-            --mud-elevation-6: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
-            --mud-elevation-7: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
-            --mud-elevation-8: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
-            --mud-elevation-9: 0px 5px 6px -3px rgba(0, 0, 0, 0.2), 0px 9px 12px 1px rgba(0, 0, 0, 0.14), 0px 3px 16px 2px rgba(0, 0, 0, 0.12);
-            --mud-elevation-10: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
-            --mud-elevation-11: 0px 6px 7px -4px rgba(0, 0, 0, 0.2), 0px 11px 15px 1px rgba(0, 0, 0, 0.14), 0px 4px 20px 3px rgba(0, 0, 0, 0.12);
-            --mud-elevation-12: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
-            --mud-elevation-13: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 13px 19px 2px rgba(0, 0, 0, 0.14), 0px 5px 24px 4px rgba(0, 0, 0, 0.12);
-            --mud-elevation-14: 0px 7px 9px -4px rgba(0, 0, 0, 0.2), 0px 14px 21px 2px rgba(0, 0, 0, 0.14), 0px 5px 26px 4px rgba(0, 0, 0, 0.12);
-            --mud-elevation-15: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
-            --mud-elevation-16: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
-            --mud-elevation-17: 0px 8px 11px -5px rgba(0, 0, 0, 0.2), 0px 17px 26px 2px rgba(0, 0, 0, 0.14), 0px 6px 32px 5px rgba(0, 0, 0, 0.12);
-            --mud-elevation-18: 0px 9px 11px -5px rgba(0, 0, 0, 0.2), 0px 18px 28px 2px rgba(0, 0, 0, 0.14), 0px 7px 34px 6px rgba(0, 0, 0, 0.12);
-            --mud-elevation-19: 0px 9px 12px -6px rgba(0, 0, 0, 0.2), 0px 19px 29px 2px rgba(0, 0, 0, 0.14), 0px 7px 36px 6px rgba(0, 0, 0, 0.12);
-            --mud-elevation-20: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 20px 31px 3px rgba(0, 0, 0, 0.14), 0px 8px 38px 7px rgba(0, 0, 0, 0.12);
-            --mud-elevation-21: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 21px 33px 3px rgba(0, 0, 0, 0.14), 0px 8px 40px 7px rgba(0, 0, 0, 0.12);
-            --mud-elevation-22: 0px 10px 14px -6px rgba(0, 0, 0, 0.2), 0px 22px 35px 3px rgba(0, 0, 0, 0.14), 0px 8px 42px 7px rgba(0, 0, 0, 0.12);
-            --mud-elevation-23: 0px 11px 14px -7px rgba(0, 0, 0, 0.2), 0px 23px 36px 3px rgba(0, 0, 0, 0.14), 0px 9px 44px 8px rgba(0, 0, 0, 0.12);
-            --mud-elevation-24: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
-            --mud-elevation-25: 0 5px 5px -3px rgba(0, 0, 0, .06), 0 8px 10px 1px rgba(0, 0, 0, .042), 0 3px 14px 2px rgba(0, 0, 0, .036);
-            --mud-default-borderradius: 20px;
-            --mud-drawer-width-left: 240px;
-            --mud-drawer-width-right: 240px;
-            --mud-drawer-width-mini-left: 56px;
-            --mud-drawer-width-mini-right: 56px;
-            --mud-appbar-min-height: 64px;
-            --mud-typography-default-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
-            --mud-typography-default-size: .875rem;
-            --mud-typography-default-weight: 400;
-            --mud-typography-default-lineheight: 1.43;
-            --mud-typography-default-letterspacing: .01071em;
-            --mud-typography-h1-family:'Raleway', 'Helvetica', 'Arial', 'sans-serif';
-            --mud-typography-h1-size: 6rem;
-            --mud-typography-h1-weight: 500;
-            --mud-typography-h1-lineheight: 1.167;
-            --mud-typography-h1-letterspacing: -.01562em;
-            --mud-typography-h2-family:'Raleway', 'Helvetica', 'Arial', 'sans-serif';
-            --mud-typography-h2-size: 3.75rem;
-            --mud-typography-h2-weight: 500;
-            --mud-typography-h2-lineheight: 1.2;
-            --mud-typography-h2-letterspacing: -.00833em;
-            --mud-typography-h3-family:'Raleway', 'Helvetica', 'Arial', 'sans-serif';
-            --mud-typography-h3-size: 2.2rem;
-            --mud-typography-h3-weight: 500;
-            --mud-typography-h3-lineheight: 1.167;
-            --mud-typography-h3-letterspacing: 0;
-            --mud-typography-h4-family:'Raleway', 'Helvetica', 'Arial', 'sans-serif';
-            --mud-typography-h4-size: 2.125rem;
-            --mud-typography-h4-weight: 500;
-            --mud-typography-h4-lineheight: 1.235;
-            --mud-typography-h4-letterspacing: .00735em;
-            --mud-typography-h5-family:'Raleway', 'Helvetica', 'Arial', 'sans-serif';
-            --mud-typography-h5-size: 1.5rem;
-            --mud-typography-h5-weight: 500;
-            --mud-typography-h5-lineheight: 1.334;
-            --mud-typography-h5-letterspacing: 0;
-            --mud-typography-h6-family:'Raleway', 'Helvetica', 'Arial', 'sans-serif';
-            --mud-typography-h6-size: 1.25rem;
-            --mud-typography-h6-weight: 500;
-            --mud-typography-h6-lineheight: 1.6;
-            --mud-typography-h6-letterspacing: .0075em;
-            --mud-typography-subtitle1-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
-            --mud-typography-subtitle1-size: 1rem;
-            --mud-typography-subtitle1-weight: 400;
-            --mud-typography-subtitle1-lineheight: 1.75;
-            --mud-typography-subtitle1-letterspacing: .00938em;
-            --mud-typography-subtitle2-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
-            --mud-typography-subtitle2-size: .875rem;
-            --mud-typography-subtitle2-weight: 500;
-            --mud-typography-subtitle2-lineheight: 1.57;
-            --mud-typography-subtitle2-letterspacing: .00714em;
-            --mud-typography-body1-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
-            --mud-typography-body1-size: 1rem;
-            --mud-typography-body1-weight: 400;
-            --mud-typography-body1-lineheight: 1.6em;
-            --mud-typography-body1-letterspacing: .00938em;
-            --mud-typography-body2-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
-            --mud-typography-body2-size: .875rem;
-            --mud-typography-body2-weight: 400;
-            --mud-typography-body2-lineheight: 1.5em;
-            --mud-typography-body2-letterspacing: .01071em;
-            --mud-typography-button-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
-            --mud-typography-button-size: .875rem;
-            --mud-typography-button-weight: 500;
-            --mud-typography-button-lineheight: 1.75;
-            --mud-typography-button-letterspacing: .02857em;
-            --mud-typography-caption-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
-            --mud-typography-caption-size: .75rem;
-            --mud-typography-caption-weight: 400;
-            --mud-typography-caption-lineheight: 1.66;
-            --mud-typography-caption-letterspacing: .03333em;
-            --mud-typography-overline-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
-            --mud-typography-overline-size: .75rem;
-            --mud-typography-overline-weight: 400;
-            --mud-typography-overline-lineheight: 2.66;
-            --mud-typography-overline-letterspacing: .08333em;
-            --mud-zindex-drawer: 1100;
-            --mud-zindex-appbar: 1200;
-            --mud-zindex-dialog: 1300;
-            --mud-zindex-popover: 1400;
-            --mud-zindex-snackbar: 1500;
-            --mud-zindex-tooltip: 1600;
-        }
-    
-     .rounded-0 {
-         border-radius: 0 !important;
-    }
-     .rounded-t-0 {
-         border-top-left-radius: 0 !important;
-         border-top-right-radius: 0 !important;
-    }
-     .rounded-r-0, .rounded-e-0 {
-         border-top-right-radius: 0 !important;
-         border-bottom-right-radius: 0 !important;
-    }
-     .rounded-b-0 {
-         border-bottom-right-radius: 0 !important;
-         border-bottom-left-radius: 0 !important;
-    }
-     .rounded-l-0, .rounded-s-0 {
-         border-top-left-radius: 0 !important;
-         border-bottom-left-radius: 0 !important;
-    }
-     .rounded-tl-0, .rounded-ts-0 {
-         border-top-left-radius: 0 !important;
-    }
-     .rounded-tr-0, .rounded-te-0 {
-         border-top-right-radius: 0 !important;
-    }
-     .rounded-br-0, .rounded-be-0 {
-         border-bottom-right-radius: 0 !important;
-    }
-     .rounded-bl-0, .rounded-bs-0 {
-         border-bottom-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-s-0 {
-         border-top-right-radius: 0 !important;
-         border-bottom-right-radius: 0 !important;
-         border-top-left-radius: 0 !important;
-         border-bottom-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-e-0 {
-         border-top-left-radius: 0 !important;
-         border-bottom-left-radius: 0 !important;
-         border-top-right-radius: 0 !important;
-         border-bottom-right-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-ts-0 {
-         border-top-right-radius: 0 !important;
-         border-top-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-te-0 {
-         border-top-left-radius: 0 !important;
-         border-top-right-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-bs-0 {
-         border-bottom-right-radius: 0 !important;
-         border-bottom-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-be-0 {
-         border-bottom-left-radius: 0 !important;
-         border-bottom-right-radius: 0 !important;
-    }
-     .rounded-sm {
-         border-radius: 2px !important;
-    }
-     .rounded-t-sm {
-         border-top-left-radius: 2px !important;
-         border-top-right-radius: 2px !important;
-    }
-     .rounded-r-sm, .rounded-e-sm {
-         border-top-right-radius: 2px !important;
-         border-bottom-right-radius: 2px !important;
-    }
-     .rounded-b-sm {
-         border-bottom-right-radius: 2px !important;
-         border-bottom-left-radius: 2px !important;
-    }
-     .rounded-l-sm, .rounded-s-sm {
-         border-top-left-radius: 2px !important;
-         border-bottom-left-radius: 2px !important;
-    }
-     .rounded-tl-sm, .rounded-ts-sm {
-         border-top-left-radius: 2px !important;
-    }
-     .rounded-tr-sm, .rounded-te-sm {
-         border-top-right-radius: 2px !important;
-    }
-     .rounded-br-sm, .rounded-be-sm {
-         border-bottom-right-radius: 2px !important;
-    }
-     .rounded-bl-sm, .rounded-bs-sm {
-         border-bottom-left-radius: 2px !important;
-    }
-     .mud-application-layout-rtl .rounded-s-sm {
-         border-top-right-radius: 2px !important;
-         border-bottom-right-radius: 2px !important;
-         border-top-left-radius: 0 !important;
-         border-bottom-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-e-sm {
-         border-top-left-radius: 2px !important;
-         border-bottom-left-radius: 2px !important;
-         border-top-right-radius: 0 !important;
-         border-bottom-right-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-ts-sm {
-         border-top-right-radius: 2px !important;
-         border-top-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-te-sm {
-         border-top-left-radius: 2px !important;
-         border-top-right-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-bs-sm {
-         border-bottom-right-radius: 2px !important;
-         border-bottom-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-be-sm {
-         border-bottom-left-radius: 2px !important;
-         border-bottom-right-radius: 0 !important;
-    }
-     .rounded-lg {
-         border-radius: 20px !important;
-    }
-     .rounded-t-lg {
-         border-top-left-radius: 20px !important;
-         border-top-right-radius: 20px !important;
-    }
-     .rounded-r-lg, .rounded-e-lg {
-         border-top-right-radius: 20px !important;
-         border-bottom-right-radius: 20px !important;
-    }
-     .rounded-b-lg {
-         border-bottom-right-radius: 20px !important;
-         border-bottom-left-radius: 20px !important;
-    }
-     .rounded-l-lg, .rounded-s-lg {
-         border-top-left-radius: 20px !important;
-         border-bottom-left-radius: 20px !important;
-    }
-     .rounded-tl-lg, .rounded-ts-lg {
-         border-top-left-radius: 20px !important;
-    }
-     .rounded-tr-lg, .rounded-te-lg {
-         border-top-right-radius: 20px !important;
-    }
-     .rounded-br-lg, .rounded-be-lg {
-         border-bottom-right-radius: 20px !important;
-    }
-     .rounded-bl-lg, .rounded-bs-lg {
-         border-bottom-left-radius: 20px !important;
-    }
-     .mud-application-layout-rtl .rounded-s-lg {
-         border-top-right-radius: 20px !important;
-         border-bottom-right-radius: 20px !important;
-         border-top-left-radius: 0 !important;
-         border-bottom-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-e-lg {
-         border-top-left-radius: 20px !important;
-         border-bottom-left-radius: 20px !important;
-         border-top-right-radius: 0 !important;
-         border-bottom-right-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-ts-lg {
-         border-top-right-radius: 20px !important;
-         border-top-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-te-lg {
-         border-top-left-radius: 20px !important;
-         border-top-right-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-bs-lg {
-         border-bottom-right-radius: 20px !important;
-         border-bottom-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-be-lg {
-         border-bottom-left-radius: 20px !important;
-         border-bottom-right-radius: 0 !important;
-    }
-     .rounded-xl {
-         border-radius: 30px !important;
-    }
-     .rounded-t-xl {
-         border-top-left-radius: 30px !important;
-         border-top-right-radius: 30px !important;
-    }
-     .rounded-r-xl, .rounded-e-xl {
-         border-top-right-radius: 30px !important;
-         border-bottom-right-radius: 30px !important;
-    }
-     .rounded-b-xl {
-         border-bottom-right-radius: 30px !important;
-         border-bottom-left-radius: 30px !important;
-    }
-     .rounded-l-xl, .rounded-s-xl {
-         border-top-left-radius: 30px !important;
-         border-bottom-left-radius: 30px !important;
-    }
-     .rounded-tl-xl, .rounded-ts-xl {
-         border-top-left-radius: 30px !important;
-    }
-     .rounded-tr-xl, .rounded-te-xl {
-         border-top-right-radius: 30px !important;
-    }
-     .rounded-br-xl, .rounded-be-xl {
-         border-bottom-right-radius: 30px !important;
-    }
-     .rounded-bl-xl, .rounded-bs-xl {
-         border-bottom-left-radius: 30px !important;
-    }
-     .mud-application-layout-rtl .rounded-s-xl {
-         border-top-right-radius: 30px !important;
-         border-bottom-right-radius: 30px !important;
-         border-top-left-radius: 0 !important;
-         border-bottom-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-e-xl {
-         border-top-left-radius: 30px !important;
-         border-bottom-left-radius: 30px !important;
-         border-top-right-radius: 0 !important;
-         border-bottom-right-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-ts-xl {
-         border-top-right-radius: 30px !important;
-         border-top-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-te-xl {
-         border-top-left-radius: 30px !important;
-         border-top-right-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-bs-xl {
-         border-bottom-right-radius: 30px !important;
-         border-bottom-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-be-xl {
-         border-bottom-left-radius: 30px !important;
-         border-bottom-right-radius: 0 !important;
-    }
-     .rounded {
-         border-radius: var(--mud-default-borderradius) !important;
-    }
-     .rounded-t {
-         border-top-left-radius: var(--mud-default-borderradius) !important;
-         border-top-right-radius: var(--mud-default-borderradius) !important;
-    }
-     .rounded-r, .rounded-e {
-         border-top-right-radius: var(--mud-default-borderradius) !important;
-         border-bottom-right-radius: var(--mud-default-borderradius) !important;
-    }
-     .rounded-b {
-         border-bottom-right-radius: var(--mud-default-borderradius) !important;
-         border-bottom-left-radius: var(--mud-default-borderradius) !important;
-    }
-     .rounded-l, .rounded-s {
-         border-top-left-radius: var(--mud-default-borderradius) !important;
-         border-bottom-left-radius: var(--mud-default-borderradius) !important;
-    }
-     .rounded-tl, .rounded-ts {
-         border-top-left-radius: var(--mud-default-borderradius) !important;
-    }
-     .rounded-tr, .rounded-te {
-         border-top-right-radius: var(--mud-default-borderradius) !important;
-    }
-     .rounded-br, .rounded-be {
-         border-bottom-right-radius: var(--mud-default-borderradius) !important;
-    }
-     .rounded-bl, .rounded-bs {
-         border-bottom-left-radius: var(--mud-default-borderradius) !important;
-    }
-     .mud-application-layout-rtl .rounded-s {
-         border-top-right-radius: var(--mud-default-borderradius) !important;
-         border-bottom-right-radius: var(--mud-default-borderradius) !important;
-         border-top-left-radius: 0 !important;
-         border-bottom-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-e {
-         border-top-left-radius: var(--mud-default-borderradius) !important;
-         border-bottom-left-radius: var(--mud-default-borderradius) !important;
-         border-top-right-radius: 0 !important;
-         border-bottom-right-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-ts {
-         border-top-right-radius: var(--mud-default-borderradius) !important;
-         border-top-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-te {
-         border-top-left-radius: var(--mud-default-borderradius) !important;
-         border-top-right-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-bs {
-         border-bottom-right-radius: var(--mud-default-borderradius) !important;
-         border-bottom-left-radius: 0 !important;
-    }
-     .mud-application-layout-rtl .rounded-be {
-         border-bottom-left-radius: var(--mud-default-borderradius) !important;
-         border-bottom-right-radius: 0 !important;
-    }
-     .rounded-circle {
-         border-radius: 50% !important;
-    }
-     .rounded-pill {
-         border-radius: 9999px !important;
-    }
-     
+      	visibility: visible;
+      	opacity: 1;
+      	animation: mud-animation-fadein 251ms;
+      	z-index: 1100;
+      }
+      .mud-tabs.mud-tabs-rounded .mud-tabs-panels {
+      	border-radius: 20px;
+      	width: max-content !important;
+      }
+      .mud-paper-outlined {
+      	border-radius: 20px;
+      }
+      .mud-tabs-panels {
+      	border-radius: 20px !important;
+      	width: max-content !important;
+      }
+
+
+
+
+
+      /*ADD*/
+      #carbonads .carbon-wrap {
+      	display: flex;
+      	border-radius: 5% 10% 5% 5% / 20% 0% 20% 20%;
+      	-webkit-background-clip: padding-box;
+      	-moz-background-clip: padding;
+      	background-clip: padding-box;
+      }
+
+
+      #carbonads {
+      	display: flex;
+      	width: 100%;
+      	max-width: 400px;
+      	background-color: var(--mud-palette-surface);
+      	box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+      	border-radius: var(--mud-default-borderradius);
+      	z-index: 100;
+      	animation: mud-animation-fadein ease .15s;
+      	border-radius: 5% 10% 5% 5% / 20% 0% 20% 20%;
+      	background: #f5f6fa;
+      	box-shadow: 0 0px 0.6px rgba(0, 0, 0, 0.05), 0 0px 1.4px rgba(0, 0, 0, 0.039), 0 0px 2.3px rgba(0, 0, 0, 0.034), 0 0px 3.5px rgba(0, 0, 0, 0.03), 0 0px 5px rgba(0, 0, 0, 0.027), 0 0px 7.1px rgba(0, 0, 0, 0.024), 0 0px 10.1px rgba(0, 0, 0, 0.021), 0 0px 14.6px rgba(0, 0, 0, 0.018), 0 0px 22.5px rgba(0, 0, 0, 0.014), 0 0px 40px rgba(0, 0, 0, 0.01);
+      	margin: 4.5rem 0 4.5rem 0;
+      }
+
+      
+      #carbonads .carbon-poweredby {
+      	display: block;
+      	padding: 6px 8px;
+      	text-align: center;
+      	text-transform: uppercase;
+      	letter-spacing: .5px;
+      	font-weight: 600;
+      	font-size: 8px;
+      	line-height: 1;
+      	border-top-left-radius: 3px;
+      	position: absolute;
+      	bottom: 0;
+      	right: 1.5rem;
+      	color: #0086ce;
+      }
+
+
+      /*TABLE*/
+      .mud-sm-table .mud-table-row:last-child .mud-table-cell:first-child {
+      	border-bottom-left-radius: 20px;
+      }
+      .mud-sm-table .mud-table-row:last-child .mud-table-cell:last-child {
+      	border-bottom-right-radius: 20px;
+      }
+      .mud-table-hover .mud-table-container .mud-table-root .mud-table-body .mud-table-row:last-child():hover {
+      	background-color: var(--mud-palette-table-hover);
+      }
+      .mud-table-container::-webkit-scrollbar-track {
+      	background: transparent;
+      	margin: 1rem;
+      }
+      .mud-table-container::-webkit-scrollbar {
+      	width: 8px;
+      	height: 8px;
+      	z-index: 1;
+      	border-radius: 20px;
+      }
+      .mud-table-container::-webkit-scrollbar-corner {
+      	background: transparent;
+      }
+      .mud-table-head .mud-table-row:first-child .mud-table-cell:first-child {
+      	border-top-left-radius: 20px;
+      }
+      .mud-table-head .mud-table-row:first-child .mud-table-cell:last-child {
+      	border-top-right-radius: 20px;
+      }
+
+
+
+
+
+      /*TIMELINE*/
+      .mt-n1, .my-n1 {
+      	margin-top: -4px !important;
+      	padding: 1rem;
+      }
+
+
+
+
+
+
+
+      /*DATE-PICKER*/
+      .mud-theme-secondary:first-child {
+      	color: var(--mud-palette-secondary-text) !important;
+      	background-color: var(--mud-palette-secondary) !important;
+      	width: 100% !important;
+      	text-align: center;
+      	margin: 0 auto;
+      }
+
+
+
+
+
+
+
+      /*SCROLLTOTOP*/
+      .pb-6, .py-6:not(.mud-typography-body1) {
+      	background: #ffffff;
+      	/*       	width: 90%; */
+      	margin: 0 auto;
+      }
+      #unique_id_scroll_section::-webkit-scrollbar-track {
+      	background: transparent;
+      	margin: 1rem 0;
+      }
+      #another_unique_identifier::-webkit-scrollbar-track {
+      	background: transparent;
+      	margin: 1rem 0;
+      }
+      .mud-theme-secondary {
+      	color: var(--mud-palette-secondary-text) !important;
+      	background-color: var(--mud-palette-secondary) !important;
+      	width: 15%;
+      	text-align: center;
+      	margin: 0 auto;
+      }
+
+
+
+
+
+
+
+
+
+      /*DIALOG*/
+      .mud-grid {
+      	display: flex;
+      	flex-wrap: wrap;
+      	box-sizing: border-box;
+      	border-radius: var(--mud-default-borderradius);
+      	background: #ffffff;
+      	box-shadow: 0 0px 0.6px rgb(0 0 0 / 5%), 0 0px 1.4px rgb(0 0 0 / 4%), 0 0px 2.3px rgb(0 0 0 / 3%), 0 0px 3.5px rgb(0 0 0 / 3%), 0 0px 5px rgb(0 0 0 / 3%), 0 0px 7.1px rgb(0 0 0 / 2%), 0 0px 10.1px rgb(0 0 0 / 2%), 0 0px 14.6px rgb(0 0 0 / 2%), 0 0px 22.5px rgb(0 0 0 / 1%), 0 0px 40px rgb(0 0 0 / 1%);
+      	margin: 0 auto;
+      	margin-bottom: 6rem;
+      }
+      .mud-grid-spacing-xs-3 {
+      	width: calc(65% + 10rem);
+      }
+      .mud-grid-spacing-xs-3>.mud-grid-item {
+      	padding: 1rem;
+      }
+      .mud-grid-item-md-6 {
+      	text-align: justify;
+      	border-radius: var(--mud-default-borderradius);
+      	background: #ffffff;
+      	border-right: solid #f5f6fa 2px;
+      }
+
+
+
+
+
+
+      /*LINKS*/
+      .docs-code.docs-code-primary {
+      	color: var(--mud-palette-primary);
+      	font-family: var(--mud-typography-body1-family);
+      	font-size: var(--mud-typography-body1-size);
+      	font-weight: var(--mud-typography-body1-weight);
+      	line-height: var(--mud-typography-body1-lineheight);
+      	letter-spacing: var(--mud-typography-body1-letterspacing);
+      	cursor: pointer;
+      }
+
+
+
+
+
+
+
+      /*LIST*/
+      .docs-page-section[api-link-section] {
+      	margin: 0.1rem 0 7rem 0;
+      	display: table;
+      	padding: 1rem !important;
+      	text-align: justify;
+      }
+      /* */
+      .docs-page-section {
+      	padding: 1rem;
+      	margin-bottom: 50px;
+      	border-radius: 20px;
+      	background: #ffffff;
+      	box-shadow: 0 0px 0.6px rgb(0 0 0 / 5%), 0 0px 1.4px rgb(0 0 0 / 4%), 0 0px 2.3px rgb(0 0 0 / 3%), 0 0px 3.5px rgb(0 0 0 / 3%), 0 0px 5px rgb(0 0 0 / 3%), 0 0px 7.1px rgb(0 0 0 / 2%), 0 0px 10.1px rgb(0 0 0 / 2%), 0 0px 14.6px rgb(0 0 0 / 2%), 0 0px 22.5px rgb(0 0 0 / 1%), 0 0px 40px rgb(0 0 0 / 1%);
+      }
+
+
+      .docs-code {
+      	display: inline-block;
+      	padding: 0;
+      	direction: ltr;
+      	font-size: .85em;
+      	font-weight: 900;
+      	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      	line-height: 1.4;
+      	border-radius: 2px;
+      	-webkit-font-smoothing: subpixel-antialiased;
+      	background: transparent !important;
+      }
+
+
+
+
+
+
+      /* */
+      .docs-page-apilinks ul li a .docs-code {
+      	list-style: none;
+      	margin: 0 1rem 0 1rem;
+      	color: var(--mud-palette-primary);
+      	padding:10px 0;
+      	cursor:pointer;
+      	transform: translateY(1px);
+      	transform: translateX(-5px);
+      }
+
+
+
+
+      /*overlay*/
+      .mud-skeleton {
+      	height: 1.7em;
+      	display: block;
+      	background-color: rgba(0, 0, 0, .11);
+      	border-radius: 20px;
+      }
+
+
+
+
+
+
+
+      /*BODY*/
+      .docs-section-content {
+      	padding: 20px;
+      	margin-bottom: 40px;
+      	background-color: var(--mud-palette-surface);
+      	margin: auto;
+      	display: flex;
+      	outline: 0;
+      	position: relative;
+      	justify-content: center;
+      	border-radius: 20px;
+      	background: #f5f6fa;
+      	box-shadow: 0 0px 0.6px rgba(0, 0, 0, 0.05), 0 0px 1.4px rgba(0, 0, 0, 0.039), 0 0px 2.3px rgba(0, 0, 0, 0.034), 0 0px 3.5px rgba(0, 0, 0, 0.03), 0 0px 5px rgba(0, 0, 0, 0.027), 0 0px 7.1px rgba(0, 0, 0, 0.024), 0 0px 10.1px rgba(0, 0, 0, 0.021), 0 0px 14.6px rgba(0, 0, 0, 0.018), 0 0px 22.5px rgba(0, 0, 0, 0.014), 0 0px 40px rgba(0, 0, 0, 0.01);
+      }
+
+
+      .mud-elevation-4 {
+      	box-shadow: var(--mud-elevation-4);
+      	z-index: 1199;
+      }
+
+
+      .mud-elevation-0 {
+      	box-shadow: var(--mud-elevation-0);
+      	z-index: 1199;
+      }
+
+
+
+
+
+      /*SLIDER*/
+      .mud-slider>input {
+      	-webkit-appearance: none;
+      	-moz-appearance: none;
+      	position: relative;
+      	display: block;
+      	width: 30%;
+      	background-color: transparent;
+      	cursor: pointer;
+      	border-radius: 30px;
+      	background: #ffffff;
+      	box-shadow: 0 0px 0.5px -9px rgba(0, 0, 0, 0.101), 0 0px 1.1px -9px rgba(0, 0, 0, 0.145), 0 0px 2.1px -9px rgba(0, 0, 0, 0.18), 0 0px 3.8px -9px rgba(0, 0, 0, 0.215), 0 0px 7.1px -9px rgba(0, 0, 0, 0.259), 0 0px 17px -9px rgba(0, 0, 0, 0.36);
+      	padding: 0 1rem 0 1rem;
+      }
+
+
+
+
+
+
+
+
+      /*CODE*/
+      .mud-codeblock {
+      	height: 100%;
+      	background-color: var(--mud-palette-black);
+      	border-radius: var(--mud-default-borderradius);
+      	padding: 1rem;
+      	overflow: auto;
+      	box-shadow: 0 0px 0.6px rgba(0, 0, 0, 0.05), 0 0px 1.4px rgba(0, 0, 0, 0.039), 0 0px 2.3px rgba(0, 0, 0, 0.034), 0 0px 3.5px rgba(0, 0, 0, 0.03), 0 0px 5px rgba(0, 0, 0, 0.027), 0 0px 7.1px rgba(0, 0, 0, 0.024), 0 0px 10.1px rgba(0, 0, 0, 0.021), 0 0px 14.6px rgba(0, 0, 0, 0.018), 0 0px 22.5px rgba(0, 0, 0, 0.014), 0 0px 40px rgba(0, 0, 0, 0.01);
+      }
+
+
+
+
+      .mud-codeblock:after {
+      	margin-top: 7rem;
+      }
+      .mud-codeblock::-webkit-scrollbar {
+      	width: 10px;
+      	height: 10px;
+      }
+      .mud-codeblock::-webkit-scrollbar-track {
+      	background-color: transparent;
+      	border-radius: 10px;
+      	margin: 0 1rem 0 1rem;
+      }
+      .mud-codeblock::-webkit-scrollbar-thumb {
+      	background-color: rgba(0, 0, 0, 0.4);
+      	border-radius: 10px;
+      }
+      /*MIDDEL*/
+      .docs-page-section {
+      	margin-bottom: 50px;
+      	border-radius: 20px;
+      	background: #ffffff;
+      	box-shadow: 0 0px 0.6px rgba(0, 0, 0, 0.05), 0 0px 1.4px rgba(0, 0, 0, 0.039), 0 0px 2.3px rgba(0, 0, 0, 0.034), 0 0px 3.5px rgba(0, 0, 0, 0.03), 0 0px 5px rgba(0, 0, 0, 0.027), 0 0px 7.1px rgba(0, 0, 0, 0.024), 0 0px 10.1px rgba(0, 0, 0, 0.021), 0 0px 14.6px rgba(0, 0, 0, 0.018), 0 0px 22.5px rgba(0, 0, 0, 0.014), 0 0px 40px rgba(0, 0, 0, 0.01);
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    :root {
+    	--mud-palette-black: #272c34;
+    	--mud-palette-white: #ffffff;
+    	--mud-palette-primary: #0086ce;
+    	--mud-palette-primary-rgb: rgb(0, 134, 206);
+    	--mud-palette-primary-text: #ffffff;
+    	--mud-palette-primary-darken: rgb(0, 134, 206);
+    	--mud-palette-primary-lighten: rgb(25, 162, 201);
+    	--mud-palette-primary-hover: rgba(89, 74, 226, 0.06);
+    	--mud-palette-secondary: #FF4081;
+    	--mud-palette-secondary-rgb:rgb(255, 64, 129);
+    	--mud-palette-secondary-text: #ffffff;
+    	--mud-palette-secondary-darken: rgb(255, 26, 104);
+    	--mud-palette-secondary-lighten: rgb(255, 102, 154);
+    	--mud-palette-secondary-hover: rgba(255, 64, 129, 0.06);
+    	--mud-palette-tertiary: rgb(45, 182, 221);
+    	--mud-palette-tertiary-rgb: 30, 200, 165;
+    	--mud-palette-tertiary-text: #ffffff;
+    	--mud-palette-tertiary-darken: rgb(25, 162, 201);
+    	--mud-palette-tertiary-lighten: rgb(25, 162, 201);
+    	--mud-palette-tertiary-hover: rgba(30, 200, 165, 0.06);
+    	--mud-palette-info: rgb(25, 162, 201);
+    	--mud-palette-info-rgb: rgb(25, 162, 201);
+    	--mud-palette-info-text: #ffffff;
+    	--mud-palette-info-darken: rgb(0, 134, 206);
+    	--mud-palette-info-lighten: rgb(25, 162, 201);
+    	--mud-palette-info-hover: rgba(33, 150, 243, 0.06);
+    	--mud-palette-success: #00C853;
+    	--mud-palette-success-rgb: 0, 200, 83;
+    	--mud-palette-success-text: #ffffff;
+    	--mud-palette-success-darken: rgb(0, 162, 67);
+    	--mud-palette-success-lighten: rgb(0, 238, 99);
+    	--mud-palette-success-hover: rgba(0, 200, 83, 0.06);
+    	--mud-palette-warning: #FF9800;
+    	--mud-palette-warning-rgb: 255, 152, 0;
+    	--mud-palette-warning-text: #ffffff;
+    	--mud-palette-warning-darken: rgb(217, 129, 0);
+    	--mud-palette-warning-lighten: rgb(255, 167, 38);
+    	--mud-palette-warning-hover: rgba(255, 152, 0, 0.06);
+    	--mud-palette-error: #F44336;
+    	--mud-palette-error-rgb: 244, 67, 54;
+    	--mud-palette-error-text: #ffffff;
+    	--mud-palette-error-darken: rgb(242, 33, 18);
+    	--mud-palette-error-lighten: rgb(246, 101, 90);
+    	--mud-palette-error-hover: rgba(244, 67, 54, 0.06);
+    	--mud-palette-dark: #424242;
+    	--mud-palette-dark-rgb: 66, 66, 66;
+    	--mud-palette-dark-text: #ffffff;
+    	--mud-palette-dark-darken: rgb(47, 47, 47);
+    	--mud-palette-dark-lighten: rgb(85, 85, 85);
+    	--mud-palette-dark-hover: rgba(66, 66, 66, 0.06);
+    	--mud-palette-text-primary: #424242;
+    	--mud-palette-text-secondary: rgba(0, 0, 0, 0.54);
+    	--mud-palette-text-disabled: rgba(0, 0, 0, 0.38);
+    	--mud-palette-action-default: rgba(0, 0, 0, 0.54);
+    	--mud-palette-action-default-hover: rgba(0, 0, 0, 0.06);
+    	--mud-palette-action-disabled: rgba(0, 0, 0, 0.26);
+    	--mud-palette-action-disabled-background: rgba(0, 0, 0, 0.12);
+    	--mud-palette-surface: #ffffff;
+    	--mud-palette-background: #f5f6fa;
+    	--mud-palette-background-grey: #f5f6fa;
+    	--mud-palette-drawer-background: #f5f6fa;
+    	--mud-palette-drawer-text: #424242;
+    	--mud-palette-drawer-icon: #616161;
+    	--mud-palette-appbar-background: rgb(0, 134, 206);
+    	--mud-palette-appbar-text: #ffffff;
+    	--mud-palette-lines-default: rgba(0, 0, 0, 0.12);
+    	--mud-palette-lines-inputs: #BDBDBD;
+    	--mud-palette-table-lines: rgba(224, 224, 224, 1);
+    	--mud-palette-table-striped: rgba(0, 0, 0, 0.02);
+    	--mud-palette-table-hover: #e5e5e5;
+    	--mud-palette-divider: #f5f6fa;
+    	--mud-palette-divider-light: rgba(0, 0, 0, 0.8);
+    	--mud-palette-grey-default: #9E9E9E;
+    	--mud-palette-grey-light: #BDBDBD;
+    	--mud-palette-grey-lighter: #E0E0E0;
+    	--mud-palette-grey-dark: #757575;
+    	--mud-palette-grey-darker: #616161;
+    	--mud-palette-overlay-dark: rgba(33, 33, 33, 0.5);
+    	--mud-palette-overlay-light: rgba(255, 255, 255, 0.5);
+    	--mud-elevation-0: none;
+    	--mud-elevation-1: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-2: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-3: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-4: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-5: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-6: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-7: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-8: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-9: 0px 5px 6px -3px rgba(0, 0, 0, 0.2), 0px 9px 12px 1px rgba(0, 0, 0, 0.14), 0px 3px 16px 2px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-10: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-11: 0px 6px 7px -4px rgba(0, 0, 0, 0.2), 0px 11px 15px 1px rgba(0, 0, 0, 0.14), 0px 4px 20px 3px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-12: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-13: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 13px 19px 2px rgba(0, 0, 0, 0.14), 0px 5px 24px 4px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-14: 0px 7px 9px -4px rgba(0, 0, 0, 0.2), 0px 14px 21px 2px rgba(0, 0, 0, 0.14), 0px 5px 26px 4px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-15: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-16: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-17: 0px 8px 11px -5px rgba(0, 0, 0, 0.2), 0px 17px 26px 2px rgba(0, 0, 0, 0.14), 0px 6px 32px 5px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-18: 0px 9px 11px -5px rgba(0, 0, 0, 0.2), 0px 18px 28px 2px rgba(0, 0, 0, 0.14), 0px 7px 34px 6px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-19: 0px 9px 12px -6px rgba(0, 0, 0, 0.2), 0px 19px 29px 2px rgba(0, 0, 0, 0.14), 0px 7px 36px 6px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-20: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 20px 31px 3px rgba(0, 0, 0, 0.14), 0px 8px 38px 7px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-21: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 21px 33px 3px rgba(0, 0, 0, 0.14), 0px 8px 40px 7px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-22: 0px 10px 14px -6px rgba(0, 0, 0, 0.2), 0px 22px 35px 3px rgba(0, 0, 0, 0.14), 0px 8px 42px 7px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-23: 0px 11px 14px -7px rgba(0, 0, 0, 0.2), 0px 23px 36px 3px rgba(0, 0, 0, 0.14), 0px 9px 44px 8px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-24: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    	--mud-elevation-25: 0 5px 5px -3px rgba(0, 0, 0, .06), 0 8px 10px 1px rgba(0, 0, 0, .042), 0 3px 14px 2px rgba(0, 0, 0, .036);
+    	--mud-default-borderradius: 20px;
+    	--mud-drawer-width-left: 240px;
+    	--mud-drawer-width-right: 240px;
+    	--mud-drawer-width-mini-left: 56px;
+    	--mud-drawer-width-mini-right: 56px;
+    	--mud-appbar-min-height: 64px;
+    	--mud-typography-default-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+    	--mud-typography-default-size: .875rem;
+    	--mud-typography-default-weight: 400;
+    	--mud-typography-default-lineheight: 1.43;
+    	--mud-typography-default-letterspacing: .01071em;
+    	--mud-typography-h1-family:'Raleway', 'Helvetica', 'Arial', 'sans-serif';
+    	--mud-typography-h1-size: 6rem;
+    	--mud-typography-h1-weight: 500;
+    	--mud-typography-h1-lineheight: 1.167;
+    	--mud-typography-h1-letterspacing: -.01562em;
+    	--mud-typography-h2-family:'Raleway', 'Helvetica', 'Arial', 'sans-serif';
+    	--mud-typography-h2-size: 3.75rem;
+    	--mud-typography-h2-weight: 500;
+    	--mud-typography-h2-lineheight: 1.2;
+    	--mud-typography-h2-letterspacing: -.00833em;
+    	--mud-typography-h3-family:'Raleway', 'Helvetica', 'Arial', 'sans-serif';
+    	--mud-typography-h3-size: 2.2rem;
+    	--mud-typography-h3-weight: 500;
+    	--mud-typography-h3-lineheight: 1.167;
+    	--mud-typography-h3-letterspacing: 0;
+    	--mud-typography-h4-family:'Raleway', 'Helvetica', 'Arial', 'sans-serif';
+    	--mud-typography-h4-size: 2.125rem;
+    	--mud-typography-h4-weight: 500;
+    	--mud-typography-h4-lineheight: 1.235;
+    	--mud-typography-h4-letterspacing: .00735em;
+    	--mud-typography-h5-family:'Raleway', 'Helvetica', 'Arial', 'sans-serif';
+    	--mud-typography-h5-size: 1.5rem;
+    	--mud-typography-h5-weight: 500;
+    	--mud-typography-h5-lineheight: 1.334;
+    	--mud-typography-h5-letterspacing: 0;
+    	--mud-typography-h6-family:'Raleway', 'Helvetica', 'Arial', 'sans-serif';
+    	--mud-typography-h6-size: 1.25rem;
+    	--mud-typography-h6-weight: 500;
+    	--mud-typography-h6-lineheight: 1.6;
+    	--mud-typography-h6-letterspacing: .0075em;
+    	--mud-typography-subtitle1-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+    	--mud-typography-subtitle1-size: 1rem;
+    	--mud-typography-subtitle1-weight: 400;
+    	--mud-typography-subtitle1-lineheight: 1.75;
+    	--mud-typography-subtitle1-letterspacing: .00938em;
+    	--mud-typography-subtitle2-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+    	--mud-typography-subtitle2-size: .875rem;
+    	--mud-typography-subtitle2-weight: 500;
+    	--mud-typography-subtitle2-lineheight: 1.57;
+    	--mud-typography-subtitle2-letterspacing: .00714em;
+    	--mud-typography-body1-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+    	--mud-typography-body1-size: 1rem;
+    	--mud-typography-body1-weight: 400;
+    	--mud-typography-body1-lineheight: 1.6em;
+    	--mud-typography-body1-letterspacing: .00938em;
+    	--mud-typography-body2-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+    	--mud-typography-body2-size: .875rem;
+    	--mud-typography-body2-weight: 400;
+    	--mud-typography-body2-lineheight: 1.5em;
+    	--mud-typography-body2-letterspacing: .01071em;
+    	--mud-typography-button-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+    	--mud-typography-button-size: .875rem;
+    	--mud-typography-button-weight: 500;
+    	--mud-typography-button-lineheight: 1.75;
+    	--mud-typography-button-letterspacing: .02857em;
+    	--mud-typography-caption-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+    	--mud-typography-caption-size: .75rem;
+    	--mud-typography-caption-weight: 400;
+    	--mud-typography-caption-lineheight: 1.66;
+    	--mud-typography-caption-letterspacing: .03333em;
+    	--mud-typography-overline-family:'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+    	--mud-typography-overline-size: .75rem;
+    	--mud-typography-overline-weight: 400;
+    	--mud-typography-overline-lineheight: 2.66;
+    	--mud-typography-overline-letterspacing: .08333em;
+    	--mud-zindex-drawer: 1100;
+    	--mud-zindex-appbar: 1200;
+    	--mud-zindex-dialog: 1300;
+    	--mud-zindex-popover: 1400;
+    	--mud-zindex-snackbar: 1500;
+    	--mud-zindex-tooltip: 1600;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .rounded-0 {
+ 	border-radius: 0 !important;
+ }
+
+
+
+
+ .rounded-t-0 {
+ 	border-top-left-radius: 0 !important;
+ 	border-top-right-radius: 0 !important;
+ }
+
+
+ .rounded-r-0, .rounded-e-0 {
+ 	border-top-right-radius: 0 !important;
+ 	border-bottom-right-radius: 0 !important;
+ }
+
+
+ .rounded-b-0 {
+ 	border-bottom-right-radius: 0 !important;
+ 	border-bottom-left-radius: 0 !important;
+ }
+
+
+ .rounded-l-0, .rounded-s-0 {
+ 	border-top-left-radius: 0 !important;
+ 	border-bottom-left-radius: 0 !important;
+ }
+ .rounded-tl-0, .rounded-ts-0 {
+ 	border-top-left-radius: 0 !important;
+ }
+ .rounded-tr-0, .rounded-te-0 {
+ 	border-top-right-radius: 0 !important;
+ }
+ .rounded-br-0, .rounded-be-0 {
+ 	border-bottom-right-radius: 0 !important;
+ }
+ .rounded-bl-0, .rounded-bs-0 {
+ 	border-bottom-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-s-0 {
+ 	border-top-right-radius: 0 !important;
+ 	border-bottom-right-radius: 0 !important;
+ 	border-top-left-radius: 0 !important;
+ 	border-bottom-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-e-0 {
+ 	border-top-left-radius: 0 !important;
+ 	border-bottom-left-radius: 0 !important;
+ 	border-top-right-radius: 0 !important;
+ 	border-bottom-right-radius: 0 !important;
+ }
+
+
+
+ .mud-application-layout-rtl .rounded-ts-0 {
+ 	border-top-right-radius: 0 !important;
+ 	border-top-left-radius: 0 !important;
+ }
+
+
+
+ .mud-application-layout-rtl .rounded-te-0 {
+ 	border-top-left-radius: 0 !important;
+ 	border-top-right-radius: 0 !important;
+ }
+
+
+ .mud-application-layout-rtl .rounded-bs-0 {
+ 	border-bottom-right-radius: 0 !important;
+ 	border-bottom-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-be-0 {
+ 	border-bottom-left-radius: 0 !important;
+ 	border-bottom-right-radius: 0 !important;
+ }
+
+
+
+
+ .rounded-sm {
+ 	border-radius: 2px !important;
+ }
+
+
+
+
+ .rounded-t-sm {
+ 	border-top-left-radius: 2px !important;
+ 	border-top-right-radius: 2px !important;
+ }
+
+
+
+
+
+ .rounded-r-sm, .rounded-e-sm {
+ 	border-top-right-radius: 2px !important;
+ 	border-bottom-right-radius: 2px !important;
+ }
+ .rounded-b-sm {
+ 	border-bottom-right-radius: 2px !important;
+ 	border-bottom-left-radius: 2px !important;
+ }
+ .rounded-l-sm, .rounded-s-sm {
+ 	border-top-left-radius: 2px !important;
+ 	border-bottom-left-radius: 2px !important;
+ }
+ .rounded-tl-sm, .rounded-ts-sm {
+ 	border-top-left-radius: 2px !important;
+ }
+ .rounded-tr-sm, .rounded-te-sm {
+ 	border-top-right-radius: 2px !important;
+ }
+ .rounded-br-sm, .rounded-be-sm {
+ 	border-bottom-right-radius: 2px !important;
+ }
+ .rounded-bl-sm, .rounded-bs-sm {
+ 	border-bottom-left-radius: 2px !important;
+ }
+ .mud-application-layout-rtl .rounded-s-sm {
+ 	border-top-right-radius: 2px !important;
+ 	border-bottom-right-radius: 2px !important;
+ 	border-top-left-radius: 0 !important;
+ 	border-bottom-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-e-sm {
+ 	border-top-left-radius: 2px !important;
+ 	border-bottom-left-radius: 2px !important;
+ 	border-top-right-radius: 0 !important;
+ 	border-bottom-right-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-ts-sm {
+ 	border-top-right-radius: 2px !important;
+ 	border-top-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-te-sm {
+ 	border-top-left-radius: 2px !important;
+ 	border-top-right-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-bs-sm {
+ 	border-bottom-right-radius: 2px !important;
+ 	border-bottom-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-be-sm {
+ 	border-bottom-left-radius: 2px !important;
+ 	border-bottom-right-radius: 0 !important;
+ }
+ .rounded-lg {
+ 	border-radius: 20px !important;
+ }
+ .rounded-t-lg {
+ 	border-top-left-radius: 20px !important;
+ 	border-top-right-radius: 20px !important;
+ }
+ .rounded-r-lg, .rounded-e-lg {
+ 	border-top-right-radius: 20px !important;
+ 	border-bottom-right-radius: 20px !important;
+ }
+ .rounded-b-lg {
+ 	border-bottom-right-radius: 20px !important;
+ 	border-bottom-left-radius: 20px !important;
+ }
+ .rounded-l-lg, .rounded-s-lg {
+ 	border-top-left-radius: 20px !important;
+ 	border-bottom-left-radius: 20px !important;
+ }
+ .rounded-tl-lg, .rounded-ts-lg {
+ 	border-top-left-radius: 20px !important;
+ }
+ .rounded-tr-lg, .rounded-te-lg {
+ 	border-top-right-radius: 20px !important;
+ }
+ .rounded-br-lg, .rounded-be-lg {
+ 	border-bottom-right-radius: 20px !important;
+ }
+ .rounded-bl-lg, .rounded-bs-lg {
+ 	border-bottom-left-radius: 20px !important;
+ }
+ .mud-application-layout-rtl .rounded-s-lg {
+ 	border-top-right-radius: 20px !important;
+ 	border-bottom-right-radius: 20px !important;
+ 	border-top-left-radius: 0 !important;
+ 	border-bottom-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-e-lg {
+ 	border-top-left-radius: 20px !important;
+ 	border-bottom-left-radius: 20px !important;
+ 	border-top-right-radius: 0 !important;
+ 	border-bottom-right-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-ts-lg {
+ 	border-top-right-radius: 20px !important;
+ 	border-top-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-te-lg {
+ 	border-top-left-radius: 20px !important;
+ 	border-top-right-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-bs-lg {
+ 	border-bottom-right-radius: 20px !important;
+ 	border-bottom-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-be-lg {
+ 	border-bottom-left-radius: 20px !important;
+ 	border-bottom-right-radius: 0 !important;
+ }
+ .rounded-xl {
+ 	border-radius: 30px !important;
+ }
+ .rounded-t-xl {
+ 	border-top-left-radius: 30px !important;
+ 	border-top-right-radius: 30px !important;
+ }
+ .rounded-r-xl, .rounded-e-xl {
+ 	border-top-right-radius: 30px !important;
+ 	border-bottom-right-radius: 30px !important;
+ }
+ .rounded-b-xl {
+ 	border-bottom-right-radius: 30px !important;
+ 	border-bottom-left-radius: 30px !important;
+ }
+ .rounded-l-xl, .rounded-s-xl {
+ 	border-top-left-radius: 30px !important;
+ 	border-bottom-left-radius: 30px !important;
+ }
+ .rounded-tl-xl, .rounded-ts-xl {
+ 	border-top-left-radius: 30px !important;
+ }
+ .rounded-tr-xl, .rounded-te-xl {
+ 	border-top-right-radius: 30px !important;
+ }
+ .rounded-br-xl, .rounded-be-xl {
+ 	border-bottom-right-radius: 30px !important;
+ }
+ .rounded-bl-xl, .rounded-bs-xl {
+ 	border-bottom-left-radius: 30px !important;
+ }
+ .mud-application-layout-rtl .rounded-s-xl {
+ 	border-top-right-radius: 30px !important;
+ 	border-bottom-right-radius: 30px !important;
+ 	border-top-left-radius: 0 !important;
+ 	border-bottom-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-e-xl {
+ 	border-top-left-radius: 30px !important;
+ 	border-bottom-left-radius: 30px !important;
+ 	border-top-right-radius: 0 !important;
+ 	border-bottom-right-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-ts-xl {
+ 	border-top-right-radius: 30px !important;
+ 	border-top-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-te-xl {
+ 	border-top-left-radius: 30px !important;
+ 	border-top-right-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-bs-xl {
+ 	border-bottom-right-radius: 30px !important;
+ 	border-bottom-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-be-xl {
+ 	border-bottom-left-radius: 30px !important;
+ 	border-bottom-right-radius: 0 !important;
+ }
+ .rounded {
+ 	border-radius: var(--mud-default-borderradius) !important;
+ }
+ .rounded-t {
+ 	border-top-left-radius: var(--mud-default-borderradius) !important;
+ 	border-top-right-radius: var(--mud-default-borderradius) !important;
+ }
+ .rounded-r, .rounded-e {
+ 	border-top-right-radius: var(--mud-default-borderradius) !important;
+ 	border-bottom-right-radius: var(--mud-default-borderradius) !important;
+ }
+ .rounded-b {
+ 	border-bottom-right-radius: var(--mud-default-borderradius) !important;
+ 	border-bottom-left-radius: var(--mud-default-borderradius) !important;
+ }
+ .rounded-l, .rounded-s {
+ 	border-top-left-radius: var(--mud-default-borderradius) !important;
+ 	border-bottom-left-radius: var(--mud-default-borderradius) !important;
+ }
+ .rounded-tl, .rounded-ts {
+ 	border-top-left-radius: var(--mud-default-borderradius) !important;
+ }
+ .rounded-tr, .rounded-te {
+ 	border-top-right-radius: var(--mud-default-borderradius) !important;
+ }
+ .rounded-br, .rounded-be {
+ 	border-bottom-right-radius: var(--mud-default-borderradius) !important;
+ }
+ .rounded-bl, .rounded-bs {
+ 	border-bottom-left-radius: var(--mud-default-borderradius) !important;
+ }
+ .mud-application-layout-rtl .rounded-s {
+ 	border-top-right-radius: var(--mud-default-borderradius) !important;
+ 	border-bottom-right-radius: var(--mud-default-borderradius) !important;
+ 	border-top-left-radius: 0 !important;
+ 	border-bottom-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-e {
+ 	border-top-left-radius: var(--mud-default-borderradius) !important;
+ 	border-bottom-left-radius: var(--mud-default-borderradius) !important;
+ 	border-top-right-radius: 0 !important;
+ 	border-bottom-right-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-ts {
+ 	border-top-right-radius: var(--mud-default-borderradius) !important;
+ 	border-top-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-te {
+ 	border-top-left-radius: var(--mud-default-borderradius) !important;
+ 	border-top-right-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-bs {
+ 	border-bottom-right-radius: var(--mud-default-borderradius) !important;
+ 	border-bottom-left-radius: 0 !important;
+ }
+ .mud-application-layout-rtl .rounded-be {
+ 	border-bottom-left-radius: var(--mud-default-borderradius) !important;
+ 	border-bottom-right-radius: 0 !important;
+ }
+ .rounded-circle {
+ 	border-radius: 50% !important;
+ }
+ .rounded-pill {
+ 	border-radius: 9999px !important;
+ }
